@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.GroupFinderController">
+   <children>
+      <Button fx:id="backButton" layoutX="850.0" layoutY="595.0" mnemonicParsing="false" onAction="#goBack" prefHeight="31.0" prefWidth="77.0" text="Back" />
+      <TableView fx:id="groupsTable" layoutX="262.0" layoutY="184.0" prefHeight="348.0" prefWidth="476.0" />
+      <Button fx:id="searchButton" layoutX="656.0" layoutY="86.0" mnemonicParsing="false" onAction="#search" text="Search" />
+      <TextField fx:id="searchField" layoutX="276.0" layoutY="86.0" prefHeight="31.0" prefWidth="341.0" promptText="Type a group name to search for" />
+      <Label fx:id="noGroupsLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="356.0" layoutY="250.0" prefHeight="108.0" prefWidth="248.0" text="No groups found matching your search." textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.PostController">
+   <children>
+      <Label layoutX="150.0" layoutY="93.0" prefHeight="94.0" prefWidth="295.0" text="Message:">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="postArea" layoutX="150.0" layoutY="219.0" prefHeight="263.0" prefWidth="701.0" />
+      <Button fx:id="cancelButton" layoutX="852.0" layoutY="606.0" mnemonicParsing="false" onAction="#goBack" prefHeight="30.0" prefWidth="89.0" text="Cancel" />
+      <Button fx:id="postButton" layoutX="150.0" layoutY="521.0" mnemonicParsing="false" onAction="#post" prefHeight="30.0" prefWidth="89.0" text="Post" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.HomePageController">
+   <children>
+      <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0">
+         <top>
+            <Pane prefHeight="206.0" prefWidth="1000.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fx:id="profilePhoto" fitHeight="111.0" fitWidth="128.0" layoutX="436.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../Downloads/p36.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="username" alignment="CENTER" layoutX="380.0" layoutY="162.0" prefHeight="30.0" prefWidth="241.0" text="Username">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </top>
+         <center>
+            <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="viewFriendsButton" layoutX="450.0" layoutY="130.0" mnemonicParsing="false" onAction="#goToFriendList" prefWidth="100.0" text="View &#10;friends" textAlignment="CENTER" />
+                  <Button fx:id="searchForFriendsButton" layoutX="450.0" layoutY="270.0" mnemonicParsing="false" onAction="#goToSearchPeople" prefWidth="100.0" text="Search for&#10;people" textAlignment="CENTER" />
+                  <Button fx:id="searchForGroupsButton" layoutX="450.0" layoutY="340.0" mnemonicParsing="false" onAction="#goToSearchGroups" prefWidth="100.0" text="Search for &#10;groups" textAlignment="CENTER" />
+                  <Button fx:id="viewGroupsButton" layoutX="450.0" layoutY="200.0" mnemonicParsing="false" onAction="#goToGroupList" prefWidth="100.0" text="View &#10;groups" textAlignment="CENTER" />
+                  <Button fx:id="personalProfileButton" layoutX="450.0" layoutY="60.0" mnemonicParsing="false" onAction="#goToMyProfile" prefWidth="100.0" text="My&#10;profile&#10;" textAlignment="CENTER" />
+                  <Button fx:id="signOutButton" layoutX="859.0" layoutY="393.0" mnemonicParsing="false" onAction="#signOut" prefWidth="100.0" text="Sign out&#10;" textAlignment="CENTER" />
+               </children>
+            </Pane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

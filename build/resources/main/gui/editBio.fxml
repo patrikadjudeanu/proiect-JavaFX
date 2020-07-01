@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.EditBioController">
+   <children>
+      <ImageView fx:id="profilePhoto" fitHeight="183.0" fitWidth="247.0" layoutX="377.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="changePhotoButton" layoutX="638.0" layoutY="209.0" mnemonicParsing="false" onAction="#changePhoto" text="Change photo" />
+      <Label alignment="CENTER" layoutX="443.0" layoutY="305.0" prefHeight="31.0" prefWidth="115.0" text="Bio">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="bioField" layoutX="272.0" layoutY="376.0" prefHeight="200.0" prefWidth="458.0" wrapText="true" />
+      <Button fx:id="saveButton" layoutX="814.0" layoutY="613.0" mnemonicParsing="false" onAction="#saveChanges" text="Save" />
+      <Button fx:id="cancelButton" layoutX="894.0" layoutY="613.0" mnemonicParsing="false" onAction="#goToProfile" text="Cancel" />
+   </children>
+</AnchorPane>

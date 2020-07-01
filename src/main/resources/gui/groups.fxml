@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.GroupsController">
+   <children>
+      <TableView fx:id="groupRequestList" layoutX="522.0" layoutY="274.0" pickOnBounds="false" prefHeight="267.0" prefWidth="439.0" />
+      <TableView fx:id="groupList" layoutX="124.0" layoutY="274.0" prefHeight="267.0" prefWidth="264.0" />
+      <Button fx:id="backButton" layoutX="894.0" layoutY="605.0" mnemonicParsing="false" onAction="#goBack" text="Back" />
+      <Label alignment="CENTER" layoutX="619.0" layoutY="171.0" prefHeight="61.0" prefWidth="245.0" text="Group requests">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="133.0" layoutY="171.0" prefHeight="61.0" prefWidth="245.0" text="Groups">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="381.0" layoutY="57.0" prefHeight="61.0" prefWidth="238.0" text="My groups">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="noGroupsLabel" layoutX="133.0" layoutY="274.0" prefHeight="89.0" prefWidth="238.0" text="You are not part of any groups." textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="noGroupRequestsLabel" layoutX="619.0" layoutY="274.0" prefHeight="89.0" prefWidth="238.0" text="You have not received any group joining requests." textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="createGroupButton" layoutX="81.0" layoutY="571.0" mnemonicParsing="false" onAction="#goToGroupCreation" prefHeight="31.0" prefWidth="145.0" text="Create new group" />
+   </children>
+</AnchorPane>
